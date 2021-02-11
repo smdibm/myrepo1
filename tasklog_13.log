@@ -1,0 +1,272 @@
+2021-02-09T09:19:38.7629567Z ##[debug]Evaluating condition for step: 'Azure Deployment:Create Or Update Resource Group action on ***'
+2021-02-09T09:19:38.7631612Z ##[debug]Evaluating: succeeded()
+2021-02-09T09:19:38.7632270Z ##[debug]Evaluating succeeded:
+2021-02-09T09:19:38.7633387Z ##[debug]=> True
+2021-02-09T09:19:38.7634039Z ##[debug]Result: True
+2021-02-09T09:19:38.7634917Z ##[section]Starting: Azure Deployment:Create Or Update Resource Group action on ***
+2021-02-09T09:19:38.7800248Z ==============================================================================
+2021-02-09T09:19:38.7800731Z Task         : Azure resource group deployment
+2021-02-09T09:19:38.7801279Z Description  : Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
+2021-02-09T09:19:38.7801760Z Version      : 2.181.0
+2021-02-09T09:19:38.7802083Z Author       : Microsoft Corporation
+2021-02-09T09:19:38.7802570Z Help         : https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-resource-group-deployment
+2021-02-09T09:19:38.7803142Z ==============================================================================
+2021-02-09T09:19:38.7981124Z ##[debug]Using node path: C:\agents\2.181.1\externals\node10\bin\node.exe
+2021-02-09T09:19:38.9647861Z ##[debug]agent.TempDirectory=D:\a\_temp
+2021-02-09T09:19:38.9673652Z ##[debug]loading inputs and endpoints
+2021-02-09T09:19:38.9705512Z ##[debug]loading ENDPOINT_AUTH_49b6e774-c2af-4de5-a383-1d3caa1633d4
+2021-02-09T09:19:38.9723216Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_49b6e774-c2af-4de5-a383-1d3caa1633d4_AUTHENTICATIONTYPE
+2021-02-09T09:19:38.9726741Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_49b6e774-c2af-4de5-a383-1d3caa1633d4_SERVICEPRINCIPALID
+2021-02-09T09:19:38.9728983Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_49b6e774-c2af-4de5-a383-1d3caa1633d4_SERVICEPRINCIPALKEY
+2021-02-09T09:19:38.9731075Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_49b6e774-c2af-4de5-a383-1d3caa1633d4_TENANTID
+2021-02-09T09:19:38.9733074Z ##[debug]loading ENDPOINT_AUTH_PARAMETER_SYSTEMVSSCONNECTION_ACCESSTOKEN
+2021-02-09T09:19:38.9735137Z ##[debug]loading ENDPOINT_AUTH_SCHEME_49b6e774-c2af-4de5-a383-1d3caa1633d4
+2021-02-09T09:19:38.9737094Z ##[debug]loading ENDPOINT_AUTH_SCHEME_SYSTEMVSSCONNECTION
+2021-02-09T09:19:38.9739005Z ##[debug]loading ENDPOINT_AUTH_SYSTEMVSSCONNECTION
+2021-02-09T09:19:38.9743258Z ##[debug]loading INPUT_ACTION
+2021-02-09T09:19:38.9745336Z ##[debug]loading INPUT_ADDSPNTOENVIRONMENT
+2021-02-09T09:19:38.9747449Z ##[debug]loading INPUT_CONNECTEDSERVICENAME
+2021-02-09T09:19:38.9749355Z ##[debug]loading INPUT_COPYAZUREVMTAGS
+2021-02-09T09:19:38.9751228Z ##[debug]loading INPUT_CSMFILE
+2021-02-09T09:19:38.9753317Z ##[debug]loading INPUT_CSMPARAMETERSFILE
+2021-02-09T09:19:38.9755522Z ##[debug]loading INPUT_DEPLOYMENTMODE
+2021-02-09T09:19:38.9757746Z ##[debug]loading INPUT_ENABLEDEPLOYMENTPREREQUISITES
+2021-02-09T09:19:38.9759609Z ##[debug]loading INPUT_LOCATION
+2021-02-09T09:19:38.9761681Z ##[debug]loading INPUT_OVERRIDEPARAMETERS
+2021-02-09T09:19:38.9763791Z ##[debug]loading INPUT_RESOURCEGROUPNAME
+2021-02-09T09:19:38.9765689Z ##[debug]loading INPUT_RUNAGENTSERVICEASUSER
+2021-02-09T09:19:38.9767638Z ##[debug]loading INPUT_TEMPLATELOCATION
+2021-02-09T09:19:38.9777500Z ##[debug]loading SECRET_ADF-DATABRICKS-API-TOKEN
+2021-02-09T09:19:38.9780027Z ##[debug]loading SECRET_ADF-SSIS-DB-ADMIN
+2021-02-09T09:19:38.9782339Z ##[debug]loading SECRET_ADF-SSIS-DB-ADMIN-SECRET
+2021-02-09T09:19:38.9784544Z ##[debug]loading SECRET_ADF-SSIS-DB-ENDPOINT
+2021-02-09T09:19:38.9786789Z ##[debug]loading SECRET_ADF-SSIS-SAS-URI
+2021-02-09T09:19:38.9788960Z ##[debug]loading SECRET_ADO-ADF-AS-NAME
+2021-02-09T09:19:38.9791203Z ##[debug]loading SECRET_ADO-ADF-NAME
+2021-02-09T09:19:38.9794775Z ##[debug]loading SECRET_ADO-ADF-RESOURCEGROUP-NAME
+2021-02-09T09:19:38.9800489Z ##[debug]loading SECRET_ADO-DATABASE-ADMIN-PASSWORD
+2021-02-09T09:19:38.9802606Z ##[debug]loading SECRET_ADO-DATABASE-ADMIN-USER
+2021-02-09T09:19:38.9830242Z ##[debug]loading SECRET_ADO-DATABASE-AZURE-READER-PASSWORD
+2021-02-09T09:19:39.7152786Z ##[debug]loading SECRET_ADO-DATABASE-AZURE-READER-USER
+2021-02-09T09:19:39.7153999Z ##[debug]loading SECRET_ADO-DATABASE-AZURE-WRITER-PASSWORD
+2021-02-09T09:19:39.7154903Z ##[debug]loading SECRET_ADO-DATABASE-AZURE-WRITER-USER
+2021-02-09T09:19:39.7155744Z ##[debug]loading SECRET_ADO-DATABASE-SERVER
+2021-02-09T09:19:39.7156613Z ##[debug]loading SECRET_ADO-MI-SERVER-CONNECTIONSTRING
+2021-02-09T09:19:39.7157413Z ##[debug]loaded 38
+2021-02-09T09:19:39.7166936Z ##[debug]Agent.ProxyUrl=undefined
+2021-02-09T09:19:39.7167833Z ##[debug]Agent.CAInfo=undefined
+2021-02-09T09:19:39.7168681Z ##[debug]Agent.ClientCert=undefined
+2021-02-09T09:19:39.7169525Z ##[debug]Agent.SkipCertValidation=undefined
+2021-02-09T09:19:39.7170347Z ##[debug]agent.proxyurl=undefined
+2021-02-09T09:19:39.7171250Z ##[debug]VSTS_ARM_REST_IGNORE_SSL_ERRORS=undefined
+2021-02-09T09:19:39.7172409Z ##[debug]AZURE_HTTP_USER_AGENT=VSTS_58533122-0ccd-418d-8b59-f72f952f71b4_Release__2494_5408_1
+2021-02-09T09:19:39.7175229Z ##[debug]Agent.TempDirectory=D:\a\_temp
+2021-02-09T09:19:39.7176247Z ##[debug]agent.proxyurl=undefined
+2021-02-09T09:19:39.7177085Z ##[debug]VSTS_ARM_REST_IGNORE_SSL_ERRORS=undefined
+2021-02-09T09:19:39.7178043Z ##[debug]AZURE_HTTP_USER_AGENT=VSTS_58533122-0ccd-418d-8b59-f72f952f71b4_Release__2494_5408_1
+2021-02-09T09:19:39.7179362Z ##[debug]Setting resource path to D:\a\_tasks\AzureResourceGroupDeployment_94a74903-f93f-4075-884f-dc11f34058b4\2.181.0\task.json
+2021-02-09T09:19:39.7180734Z ##[debug]check path : D:\a\_tasks\AzureResourceGroupDeployment_94a74903-f93f-4075-884f-dc11f34058b4\2.181.0\task.json
+2021-02-09T09:19:39.7182072Z ##[debug]adding resource file: D:\a\_tasks\AzureResourceGroupDeployment_94a74903-f93f-4075-884f-dc11f34058b4\2.181.0\task.json
+2021-02-09T09:19:39.7183131Z ##[debug]system.culture=en-US
+2021-02-09T09:19:39.7184227Z ##[debug]check path : D:\a\_tasks\AzureResourceGroupDeployment_94a74903-f93f-4075-884f-dc11f34058b4\2.181.0\node_modules\azure-pipelines-tasks-azure-arm-rest-v2\module.json
+2021-02-09T09:19:39.7185648Z ##[debug]adding resource file: D:\a\_tasks\AzureResourceGroupDeployment_94a74903-f93f-4075-884f-dc11f34058b4\2.181.0\node_modules\azure-pipelines-tasks-azure-arm-rest-v2\module.json
+2021-02-09T09:19:39.7186737Z ##[debug]system.culture=en-US
+2021-02-09T09:19:39.7187625Z ##[debug]ConnectedServiceName=49b6e774-c2af-4de5-a383-1d3caa1633d4
+2021-02-09T09:19:39.7266832Z ##[debug]Processed: ##vso[telemetry.publish area=TaskEndpointId;feature=AzureResourceGroupDeployment]{"endpointId":"49b6e774-c2af-4de5-a383-1d3caa1633d4"}
+2021-02-09T09:19:39.7269042Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data SubscriptionId = 968535c6-3c5e-4136-8090-a4942e58b0c0
+2021-02-09T09:19:39.7270252Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data armManagementPortalUrl = https://portal.azure.com/
+2021-02-09T09:19:39.7271338Z ##[debug]resourceGroupName=***
+2021-02-09T09:19:39.7272078Z ##[debug]action=Create Or Update Resource Group
+2021-02-09T09:19:39.7272806Z ##[debug]location=Canada Central
+2021-02-09T09:19:39.7273626Z ##[debug]templateLocation=Linked artifact
+2021-02-09T09:19:39.7274511Z ##[debug]csmFile=D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json
+2021-02-09T09:19:39.7275605Z ##[debug]csmParametersFile=D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\arm_template_parameters_UAT.json
+2021-02-09T09:19:39.7278656Z ##[debug]overrideParameters=-MI_SERVER_connectionString "***" -Azure-SSIS_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword "***" -Azure-SSIS_properties_typeProperties_ssisProperties_customSetupScriptProperties_sasToken "https://fc0ssis0sto0gb0cc0uat.blob.core.windows.net/ssis?sv=2018-03-28&si=ssis-16EFE4EAD20&sr=c&sig=RVG8p8E6t%252BBu4Kk4CNml%252BLv1F0joH31%252Bc6FefYHpKNw%253D"
+2021-02-09T09:19:39.7289786Z ##[warning]%25 detected in ##vso command. In March 2021, the agent command parser will be updated to unescape this to %. To opt out of this behavior, set a job level variable DECODE_PERCENTS to false. Setting to true will force this behavior immediately. More information can be found at https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/percentEncoding.md
+2021-02-09T09:19:39.7303660Z ##[debug]enableDeploymentPrerequisites=None
+2021-02-09T09:19:39.7304491Z ##[debug]deploymentGroupName=undefined
+2021-02-09T09:19:39.7305199Z ##[debug]copyAzureVMTags=true
+2021-02-09T09:19:39.7305919Z ##[debug]deploymentGroupEndpoint=undefined
+2021-02-09T09:19:39.7306827Z ##[debug]runAgentServiceAsUser=false
+2021-02-09T09:19:39.7307546Z ##[debug]userName=undefined
+2021-02-09T09:19:39.7308222Z ##[debug]password=undefined
+2021-02-09T09:19:39.7308909Z ##[debug]outputVariable=undefined
+2021-02-09T09:19:39.7309600Z ##[debug]deploymentName=undefined
+2021-02-09T09:19:39.7310296Z ##[debug]deploymentMode=Incremental
+2021-02-09T09:19:39.7311088Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth scheme = ServicePrincipal
+2021-02-09T09:19:39.7312039Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data subscriptionid = 968535c6-3c5e-4136-8090-a4942e58b0c0
+2021-02-09T09:19:39.7313059Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data subscriptionname = FLC-ACC-CEA-DTA-2
+2021-02-09T09:19:39.7314083Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param serviceprincipalid = ***
+2021-02-09T09:19:39.7315097Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data environmentAuthorityUrl = https://login.windows.net/
+2021-02-09T09:19:39.7316119Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param tenantid = ***
+2021-02-09T09:19:39.7317015Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4=https://management.azure.com/
+2021-02-09T09:19:39.7317928Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data environment = AzureCloud
+2021-02-09T09:19:39.7318801Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth scheme = ServicePrincipal
+2021-02-09T09:19:39.7319666Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data msiclientId = undefined
+2021-02-09T09:19:39.7320682Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data activeDirectoryServiceEndpointResourceId = https://management.core.windows.net/
+2021-02-09T09:19:39.7321845Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data AzureKeyVaultServiceEndpointResourceId = https://vault.azure.net
+2021-02-09T09:19:39.7322926Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data AzureKeyVaultDnsSuffix = vault.azure.net
+2021-02-09T09:19:39.7324027Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data ScopeLevel = Subscription
+2021-02-09T09:19:39.7324947Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param authenticationType = ***
+2021-02-09T09:19:39.7325741Z ##[debug]credentials spn endpoint
+2021-02-09T09:19:39.7326878Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param serviceprincipalkey = ***
+2021-02-09T09:19:39.7327805Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data EnableAdfsAuthentication = false
+2021-02-09T09:19:39.7328713Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param apitoken = undefined
+2021-02-09T09:19:39.7332633Z ##[debug]{"subscriptionID":"968535c6-3c5e-4136-8090-a4942e58b0c0","subscriptionName":"FLC-ACC-CEA-DTA-2","servicePrincipalClientID":"***","environmentAuthorityUrl":"https://login.windows.net/","tenantID":"***","url":"https://management.azure.com/","environment":"AzureCloud","scheme":"ServicePrincipal","activeDirectoryResourceID":"https://management.azure.com/","azureKeyVaultServiceEndpointResourceId":"https://vault.azure.net","azureKeyVaultDnsSuffix":"vault.azure.net","scopeLevel":"Subscription","authenticationType":"***","servicePrincipalKey":***,"isADFSEnabled":false,"applicationTokenCredentials":{"clientId":"***","domain":"***","baseUrl":"https://management.azure.com/","authorityUrl":"https://login.windows.net/","activeDirectoryResourceId":"https://management.azure.com/","isAzureStackEnvironment":false,"authType":"***","secret":***,"isADFSEnabled":false}}
+2021-02-09T09:19:39.7335898Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth scheme = ServicePrincipal
+2021-02-09T09:19:39.7337011Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth scheme = ServicePrincipal
+2021-02-09T09:19:39.7338026Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data subscriptionid = 968535c6-3c5e-4136-8090-a4942e58b0c0
+2021-02-09T09:19:39.7338977Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data subscriptionname = FLC-ACC-CEA-DTA-2
+2021-02-09T09:19:39.7339985Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param serviceprincipalid = ***
+2021-02-09T09:19:39.7340966Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data environmentAuthorityUrl = https://login.windows.net/
+2021-02-09T09:19:39.7341990Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param tenantid = ***
+2021-02-09T09:19:39.7342961Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4=https://management.azure.com/
+2021-02-09T09:19:39.7343873Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data environment = AzureCloud
+2021-02-09T09:19:39.7344739Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth scheme = ServicePrincipal
+2021-02-09T09:19:39.7345598Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data msiclientId = undefined
+2021-02-09T09:19:39.7346627Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data activeDirectoryServiceEndpointResourceId = https://management.core.windows.net/
+2021-02-09T09:19:39.7347768Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data AzureKeyVaultServiceEndpointResourceId = https://vault.azure.net
+2021-02-09T09:19:39.7348788Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data AzureKeyVaultDnsSuffix = vault.azure.net
+2021-02-09T09:19:39.7349737Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data ScopeLevel = Subscription
+2021-02-09T09:19:39.7350774Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data graphUrl = https://graph.windows.net/
+2021-02-09T09:19:39.7351727Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param authenticationType = ***
+2021-02-09T09:19:39.7352512Z ##[debug]credentials spn endpoint
+2021-02-09T09:19:39.7353482Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param serviceprincipalkey = ***
+2021-02-09T09:19:39.7354783Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 data EnableAdfsAuthentication = false
+2021-02-09T09:19:39.7356608Z ##[debug]49b6e774-c2af-4de5-a383-1d3caa1633d4 auth param apitoken = undefined
+2021-02-09T09:19:39.7360712Z ##[debug]{"subscriptionID":"968535c6-3c5e-4136-8090-a4942e58b0c0","subscriptionName":"FLC-ACC-CEA-DTA-2","servicePrincipalClientID":"***","environmentAuthorityUrl":"https://login.windows.net/","tenantID":"***","url":"https://graph.windows.net/","environment":"AzureCloud","scheme":"ServicePrincipal","activeDirectoryResourceID":"https://graph.windows.net/","azureKeyVaultServiceEndpointResourceId":"https://vault.azure.net","azureKeyVaultDnsSuffix":"vault.azure.net","scopeLevel":"Subscription","authenticationType":"***","servicePrincipalKey":***,"isADFSEnabled":false,"applicationTokenCredentials":{"clientId":"***","domain":"***","baseUrl":"https://graph.windows.net/","authorityUrl":"https://login.windows.net/","activeDirectoryResourceId":"https://graph.windows.net/","isAzureStackEnvironment":false,"authType":"***","secret":***,"isADFSEnabled":false}}
+2021-02-09T09:19:39.7364022Z ##[debug]project=undefined
+2021-02-09T09:19:39.7364856Z ##[debug]deploymentOutputs=undefined
+2021-02-09T09:19:39.7365698Z ##[debug]addSpnToEnvironment=false
+2021-02-09T09:19:39.7366526Z Checking if the following resource group exists: ***.
+2021-02-09T09:19:39.7367427Z ##[debug][POST]https://login.windows.net/***/oauth2/token/
+2021-02-09T09:19:40.6535322Z ##[debug][HEAD]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***?api-version=2019-10-01
+2021-02-09T09:19:40.8557931Z ##[debug]Correlation ID from ARM api call response : 75b7fd10-b12d-4b71-9ce3-886cb20025a6
+2021-02-09T09:19:40.8562370Z Resource group exists: true.
+2021-02-09T09:19:40.8565393Z Creating deployment parameters.
+2021-02-09T09:19:40.8570819Z ##[debug]System.DefaultWorkingDirectory=D:\a\r1\a
+2021-02-09T09:19:40.8580839Z ##[debug]defaultRoot: 'D:\a\r1\a'
+2021-02-09T09:19:40.8582941Z ##[debug]findOptions.allowBrokenSymbolicLinks: 'false'
+2021-02-09T09:19:40.8584721Z ##[debug]findOptions.followSpecifiedSymbolicLink: 'true'
+2021-02-09T09:19:40.8586412Z ##[debug]findOptions.followSymbolicLinks: 'true'
+2021-02-09T09:19:40.8588206Z ##[debug]matchOptions.debug: 'false'
+2021-02-09T09:19:40.8589932Z ##[debug]matchOptions.nobrace: 'true'
+2021-02-09T09:19:40.8591815Z ##[debug]matchOptions.noglobstar: 'false'
+2021-02-09T09:19:40.8593414Z ##[debug]matchOptions.dot: 'true'
+2021-02-09T09:19:40.8594922Z ##[debug]matchOptions.noext: 'false'
+2021-02-09T09:19:40.8596459Z ##[debug]matchOptions.nocase: 'true'
+2021-02-09T09:19:40.8597983Z ##[debug]matchOptions.nonull: 'false'
+2021-02-09T09:19:40.8599511Z ##[debug]matchOptions.matchBase: 'false'
+2021-02-09T09:19:40.8601123Z ##[debug]matchOptions.nocomment: 'false'
+2021-02-09T09:19:40.8602764Z ##[debug]matchOptions.nonegate: 'false'
+2021-02-09T09:19:40.8604397Z ##[debug]matchOptions.flipNegate: 'false'
+2021-02-09T09:19:40.8606255Z ##[debug]pattern: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json'
+2021-02-09T09:19:40.8633667Z ##[debug]findPath: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json'
+2021-02-09T09:19:40.8634563Z ##[debug]statOnly: 'true'
+2021-02-09T09:19:40.8635396Z ##[debug]found 1 paths
+2021-02-09T09:19:40.8636229Z ##[debug]applying include pattern
+2021-02-09T09:19:40.8647837Z ##[debug]1 matches
+2021-02-09T09:19:40.8759775Z ##[debug]1 final results
+2021-02-09T09:19:40.8762357Z ##[debug]Loading CSM Template File.. D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json
+2021-02-09T09:19:40.8777115Z ##[debug]Detecting file encoding using BOM
+2021-02-09T09:19:40.8802677Z ##[debug]Unable to detect File encoding using BOM
+2021-02-09T09:19:40.8803585Z ##[debug]Detecting file encoding without BOM
+2021-02-09T09:19:40.8804594Z The detected encoding for file 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json' is 'utf-8'
+2021-02-09T09:19:41.3599175Z ##[debug]Loaded CSM File
+2021-02-09T09:19:41.3609653Z ##[debug]System.DefaultWorkingDirectory=D:\a\r1\a
+2021-02-09T09:19:41.3611661Z ##[debug]defaultRoot: 'D:\a\r1\a'
+2021-02-09T09:19:41.3613549Z ##[debug]findOptions.allowBrokenSymbolicLinks: 'false'
+2021-02-09T09:19:41.3614952Z ##[debug]findOptions.followSpecifiedSymbolicLink: 'true'
+2021-02-09T09:19:41.3615944Z ##[debug]findOptions.followSymbolicLinks: 'true'
+2021-02-09T09:19:41.3616835Z ##[debug]matchOptions.debug: 'false'
+2021-02-09T09:19:41.3617696Z ##[debug]matchOptions.nobrace: 'true'
+2021-02-09T09:19:41.3618591Z ##[debug]matchOptions.noglobstar: 'false'
+2021-02-09T09:19:41.3619438Z ##[debug]matchOptions.dot: 'true'
+2021-02-09T09:19:41.3620358Z ##[debug]matchOptions.noext: 'false'
+2021-02-09T09:19:41.3621219Z ##[debug]matchOptions.nocase: 'true'
+2021-02-09T09:19:41.3622093Z ##[debug]matchOptions.nonull: 'false'
+2021-02-09T09:19:41.3622986Z ##[debug]matchOptions.matchBase: 'false'
+2021-02-09T09:19:41.3623856Z ##[debug]matchOptions.nocomment: 'false'
+2021-02-09T09:19:41.3624732Z ##[debug]matchOptions.nonegate: 'false'
+2021-02-09T09:19:41.3625623Z ##[debug]matchOptions.flipNegate: 'false'
+2021-02-09T09:19:41.3626669Z ##[debug]pattern: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\arm_template_parameters_UAT.json'
+2021-02-09T09:19:41.3627863Z ##[debug]findPath: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\arm_template_parameters_UAT.json'
+2021-02-09T09:19:41.3628860Z ##[debug]statOnly: 'true'
+2021-02-09T09:19:41.3629737Z ##[debug]found 1 paths
+2021-02-09T09:19:41.3630614Z ##[debug]applying include pattern
+2021-02-09T09:19:41.3631395Z ##[debug]1 matches
+2021-02-09T09:19:41.3632166Z ##[debug]1 final results
+2021-02-09T09:19:41.3633213Z ##[debug]Loading Parameters File.. D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\arm_template_parameters_UAT.json
+2021-02-09T09:19:41.3634915Z ##[debug]Detecting file encoding using BOM
+2021-02-09T09:19:41.3635785Z ##[debug]Unable to detect File encoding using BOM
+2021-02-09T09:19:41.3636660Z ##[debug]Detecting file encoding without BOM
+2021-02-09T09:19:41.3637632Z The detected encoding for file 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\arm_template_parameters_UAT.json' is 'utf-8'
+2021-02-09T09:19:41.3665139Z ##[debug]Loaded Parameters File
+2021-02-09T09:19:41.3667859Z ##[debug]Overriding Parameters..
+2021-02-09T09:19:41.3675533Z ##[debug]Overriding key: MI_SERVER_connectionString
+2021-02-09T09:19:41.3677053Z ##[debug]Overriding key: Azure-SSIS_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword
+2021-02-09T09:19:41.3678102Z ##[debug]Overriding key: Azure-SSIS_properties_typeProperties_ssisProperties_customSetupScriptProperties_sasToken
+2021-02-09T09:19:41.3690706Z ##[debug][POST]https://login.windows.net/***/oauth2/token/
+2021-02-09T09:19:41.3713705Z (node:4004) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2021-02-09T09:19:41.7111013Z ##[debug][GET]https://graph.windows.net/***/servicePrincipals?$filter=appId%2520eq%2520'***'&api-version=1.6
+2021-02-09T09:19:41.7113681Z ##[warning]%25 detected in ##vso command. In March 2021, the agent command parser will be updated to unescape this to %. To opt out of this behavior, set a job level variable DECODE_PERCENTS to false. Setting to true will force this behavior immediately. More information can be found at https://github.com/microsoft/azure-pipelines-agent/blob/master/docs/design/percentEncoding.md
+2021-02-09T09:19:42.0326716Z Starting template validation.
+2021-02-09T09:19:42.0328560Z ##[debug]System.DefaultWorkingDirectory=D:\a\r1\a
+2021-02-09T09:19:42.0330186Z ##[debug]defaultRoot: 'D:\a\r1\a'
+2021-02-09T09:19:42.0331622Z ##[debug]findOptions.allowBrokenSymbolicLinks: 'false'
+2021-02-09T09:19:42.0333221Z ##[debug]findOptions.followSpecifiedSymbolicLink: 'true'
+2021-02-09T09:19:42.0334826Z ##[debug]findOptions.followSymbolicLinks: 'true'
+2021-02-09T09:19:42.0336340Z ##[debug]matchOptions.debug: 'false'
+2021-02-09T09:19:42.0337994Z ##[debug]matchOptions.nobrace: 'true'
+2021-02-09T09:19:42.0339405Z ##[debug]matchOptions.noglobstar: 'false'
+2021-02-09T09:19:42.0341069Z ##[debug]matchOptions.dot: 'true'
+2021-02-09T09:19:42.0342416Z ##[debug]matchOptions.noext: 'false'
+2021-02-09T09:19:42.0343760Z ##[debug]matchOptions.nocase: 'true'
+2021-02-09T09:19:42.0344933Z ##[debug]matchOptions.nonull: 'false'
+2021-02-09T09:19:42.0346124Z ##[debug]matchOptions.matchBase: 'false'
+2021-02-09T09:19:42.0347300Z ##[debug]matchOptions.nocomment: 'false'
+2021-02-09T09:19:42.0348506Z ##[debug]matchOptions.nonegate: 'false'
+2021-02-09T09:19:42.0349679Z ##[debug]matchOptions.flipNegate: 'false'
+2021-02-09T09:19:42.0351093Z ##[debug]pattern: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json'
+2021-02-09T09:19:42.0352740Z ##[debug]findPath: 'D:\a\r1\a\_ADF-INGEST CI\_global-ingest-adf\s\FC-INGEST-ADF-GB-CC-DEV\ARMTemplateForFactory.json'
+2021-02-09T09:19:42.0354132Z ##[debug]statOnly: 'true'
+2021-02-09T09:19:42.0355176Z ##[debug]found 1 paths
+2021-02-09T09:19:42.0356216Z ##[debug]applying include pattern
+2021-02-09T09:19:42.0357254Z ##[debug]1 matches
+2021-02-09T09:19:42.0358265Z ##[debug]1 final results
+2021-02-09T09:19:42.0829239Z Deployment name is ARMTemplateForFactory-20210209-091942-8624
+2021-02-09T09:19:42.0921087Z ##[debug][POST]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624/validate?api-version=2019-10-01
+2021-02-09T09:19:46.5861210Z ##[debug]Correlation ID from ARM api call response : d00ce045-ffcc-42e7-9c98-df28b56db76c
+2021-02-09T09:19:46.5862659Z Template deployment validation was completed successfully.
+2021-02-09T09:19:46.5863600Z Starting Deployment.
+2021-02-09T09:19:46.5865297Z Deployment name is ARMTemplateForFactory-20210209-091942-8624
+2021-02-09T09:19:46.5954613Z ##[debug][PUT]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624?api-version=2019-10-01
+2021-02-09T09:19:51.5042487Z ##[debug]Correlation ID from ARM api call response : 0ba57fac-ad19-4720-9ef5-ed34c62741ae
+2021-02-09T09:19:51.5044721Z ##[debug]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624?api-version=2019-10-01 ==> https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624/operationStatuses/08585887444979683932?api-version=2019-10-01
+2021-02-09T09:19:51.5051149Z ##[debug][GET]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624/operationStatuses/08585887444979683932?api-version=2019-10-01
+2021-02-09T09:19:51.5535082Z ##[debug]Correlation ID from ARM api call response : c733edac-52e2-4897-8c00-a93620ff5c7a
+2021-02-09T09:19:51.5536708Z ##[debug]Response status code : 200
+2021-02-09T09:19:51.5537968Z ##[debug]Response status : Accepted
+2021-02-09T09:20:06.7091353Z ##[debug][GET]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624/operationStatuses/08585887444979683932?api-version=2019-10-01
+2021-02-09T09:20:06.7093848Z ##[debug]Correlation ID from ARM api call response : 50eceb70-ef5c-4895-a296-44d78cd5d686
+2021-02-09T09:20:06.7095406Z ##[debug]Response status code : 200
+2021-02-09T09:20:06.7096823Z ##[debug]Response status : Running
+2021-02-09T09:20:21.6312016Z ##[debug][GET]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624/operationStatuses/08585887444979683932?api-version=2019-10-01
+2021-02-09T09:20:21.7434728Z ##[debug]Correlation ID from ARM api call response : b0b58e7f-0059-4d35-a90d-448b42b0dd35
+2021-02-09T09:20:21.7436816Z ##[debug]Response status code : 200
+2021-02-09T09:20:21.7439284Z ##[debug][GET]https://management.azure.com/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.Resources/deployments/ARMTemplateForFactory-20210209-091942-8624?api-version=2019-10-01
+2021-02-09T09:20:21.8404176Z ##[debug]Correlation ID from ARM api call response : 22202ad1-7f67-4ac0-a7f7-6defa9b425e5
+2021-02-09T09:20:21.8409650Z There were errors in your deployment. Error code: DeploymentFailed.
+2021-02-09T09:20:21.8440981Z ##[error]At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.
+2021-02-09T09:20:21.8444284Z ##[debug]Processed: ##vso[task.issue type=error;]At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.
+2021-02-09T09:20:21.8446442Z ##[error]Details:
+2021-02-09T09:20:21.8447258Z ##[debug]Processed: ##vso[task.issue type=error;]Details:
+2021-02-09T09:20:21.8451857Z ##[error]LinkedAuthorizationFailed: The client 'f9ef8e2f-191e-4942-81a8-c309240e7c06' with object id 'f9ef8e2f-191e-4942-81a8-c309240e7c06' has permission to perform action 'Microsoft.DataFactory/factories/triggers/write' on scope '/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.DataFactory/factories/***/triggers/BookingcomEventBased'; however, it does not have permission to perform action 'Microsoft.EventGrid/EventSubscriptions/Write' on the linked scope(s) '/subscriptions/505be6af-6500-4529-9a3f-c4ecdf7485f5/resourceGroups/FC-DATASOURCES-RG-GB-CC-PRD/providers/Microsoft.Storage/storageAccounts/fc0intland0sto0gb0cc0prd' or the linked scope(s) are invalid.
+2021-02-09T09:20:21.8455802Z ##[debug]Processed: ##vso[task.issue type=error;]LinkedAuthorizationFailed: The client 'f9ef8e2f-191e-4942-81a8-c309240e7c06' with object id 'f9ef8e2f-191e-4942-81a8-c309240e7c06' has permission to perform action 'Microsoft.DataFactory/factories/triggers/write' on scope '/subscriptions/968535c6-3c5e-4136-8090-a4942e58b0c0/resourcegroups/***/providers/Microsoft.DataFactory/factories/***/triggers/BookingcomEventBased'; however, it does not have permission to perform action 'Microsoft.EventGrid/EventSubscriptions/Write' on the linked scope(s) '/subscriptions/505be6af-6500-4529-9a3f-c4ecdf7485f5/resourceGroups/FC-DATASOURCES-RG-GB-CC-PRD/providers/Microsoft.Storage/storageAccounts/fc0intland0sto0gb0cc0prd' or the linked scope(s) are invalid.
+2021-02-09T09:20:21.8460685Z ##[error]Check out the troubleshooting guide to see if your issue is addressed: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-resource-group-deployment?view=azure-devops#troubleshooting
+2021-02-09T09:20:21.8462218Z ##[debug]Processed: ##vso[task.issue type=error;]Check out the troubleshooting guide to see if your issue is addressed: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-resource-group-deployment?view=azure-devops#troubleshooting
+2021-02-09T09:20:21.8475174Z ##[debug]task result: Failed
+2021-02-09T09:20:21.8482664Z ##[error]Task failed while creating or updating the template deployment.
+2021-02-09T09:20:21.8483694Z ##[debug]Processed: ##vso[task.issue type=error;]Task failed while creating or updating the template deployment.
+2021-02-09T09:20:21.8487408Z ##[debug]Processed: ##vso[task.complete result=Failed;]Task failed while creating or updating the template deployment.
+2021-02-09T09:20:21.8530295Z ##[section]Finishing: Azure Deployment:Create Or Update Resource Group action on ***
